@@ -1,10 +1,9 @@
 package Day1;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.Reporter;
 
+ 
 public class TC003  extends LaunchBrowser{
 	
  
@@ -12,7 +11,12 @@ public class TC003  extends LaunchBrowser{
 	
 	@Test
 	public void url() {
+		driver.get("https://www.google.com");
 		System.out.println("open url");
+		Reporter.log("User is  on "+ driver.getCurrentUrl());
+		String title = driver.getTitle();
+
+		Reporter.log(title);
 	}
 	
 	@Test
