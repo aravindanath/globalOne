@@ -12,7 +12,7 @@ public class TC002 extends LaunchBrowser {
 	@Test
 	public void url() {
 		
-		driver.get("https://www.flipkart.com");
+		driver.get("https://www.yahoo.com");
 		System.out.println("open url");
 		Reporter.log("User is  on "+ driver.getCurrentUrl());
 		String title = driver.getTitle();
@@ -44,8 +44,8 @@ public class TC002 extends LaunchBrowser {
 	@Test
 	public void cod() {
 		System.out.println("cod");
-
-		throw new SkipException("SKip...");
+		throw new SkipException("Skipping,...");
+		
 	}
 
 }

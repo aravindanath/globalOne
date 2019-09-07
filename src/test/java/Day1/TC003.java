@@ -1,9 +1,14 @@
 package Day1;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import sep7.LogMyRep;
+
+import org.testng.Assert;
 import org.testng.Reporter;
 
- 
+//@Listeners(LogMyRep.class) 
 public class TC003  extends LaunchBrowser{
 	
  
@@ -28,6 +33,8 @@ public class TC003  extends LaunchBrowser{
 	@Test
 	public void login() {
 		System.out.println("login");
+		
+		Assert.fail("Fail login....");
 	}
 	
 	

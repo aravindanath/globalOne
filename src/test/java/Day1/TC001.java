@@ -23,7 +23,7 @@ public class TC001 extends LaunchBrowser {
 	@Test
 	public void url() {
 		Reporter.log("User is on amazon page");
-		driver.get("https://www.amazon.com");
+		driver.get("https://www.facebook.com");
 		String title = driver.getTitle();
 		Reporter.log("User is  on "+ driver.getCurrentUrl());
 		Reporter.log(title);

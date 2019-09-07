@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<listeners>
+<suite name="E-Com Suite">
+
+<listeners>
 		<listener class-name="sep7.LogMyRep" />
 
 	</listeners>
-
-
-	<test thread-count="5" name="Test" parallel="classes">
+	<test thread-count="5" name="Page Title Test" parallel="classes">
 		<classes>
-			<class name="Day1.TC001" />
+			<class name="sep7.TC001" />
+			<class name="sep7.TC002" />
 			<class name="Day1.TC002" />
+			<class name="Day1.TC001" />
 			<class name="Day1.TC003" />
 		</classes>
-
 	</test> <!-- Test -->
-
 </suite> <!-- Suite -->
