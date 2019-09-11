@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import Day1.LaunchBrowser;
 
 public class ActionsClass extends LaunchBrowser {
-
+//http://the-internet.herokuapp.com/
 	@Test
 	public void mouseHoverTest() throws InterruptedException {
 
@@ -79,6 +79,14 @@ public class ActionsClass extends LaunchBrowser {
 		
 		Actions act =  new Actions(driver);
 		act.contextClick(tgt).build().perform();
+
+	}
+	
+	public static void clickHold(WebDriver driver, WebElement tgt) {
+		
+		Actions act =  new Actions(driver);
+		act.clickAndHold(tgt).build().perform();
+		act.release().build().perform();
 
 	}
 	
