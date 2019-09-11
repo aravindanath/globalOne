@@ -34,10 +34,17 @@ public class ActionsClass extends LaunchBrowser {
 		
 		dragDrop(driver, src1, tgt1);
 		dragDrop(driver, src2, tgt2);
+		Thread.sleep(2000);
 		
+	//	WebElement ele =  driver.findElement(By.xpath("(//*[@id=\"equal\"]/a)[1]"));
+	//	doubleClick(driver, ele);
+		rightClick(driver, src1);
 		Thread.sleep(2000);
 	}
 
+	
+	
+	
 	/**
 	 * @author aravindanathdm
 	 * @param driver
@@ -57,5 +64,23 @@ public class ActionsClass extends LaunchBrowser {
 		act.dragAndDrop(src, tgt).build().perform();
 
 	}
+
+	
+	public static void doubleClick(WebDriver driver, WebElement ele) {
+		
+		Actions act =  new Actions(driver);
+		act.doubleClick(ele).build().perform();
+
+	}
+	
+	
+	
+	public static void rightClick(WebDriver driver, WebElement tgt) {
+		
+		Actions act =  new Actions(driver);
+		act.contextClick(tgt).build().perform();
+
+	}
+	
 
 }
