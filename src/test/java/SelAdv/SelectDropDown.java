@@ -16,8 +16,8 @@ public class SelectDropDown extends LaunchBrowser {
 	public void dropdown() throws InterruptedException {
 		driver.get("https://www.wikipedia.org");
 		WebElement langdrop = driver.findElement(By.id("searchLanguage"));
-		langdrop.sendKeys("हिन्दी");
-		Thread.sleep(3000);
+		langdrop.sendKeys("Deutsch");
+		Thread.sleep(5000);
 		selectBYIndex(langdrop, 20);
 		Thread.sleep(3000);
 		selectBYValue(langdrop, "min");

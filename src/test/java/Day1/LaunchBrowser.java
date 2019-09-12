@@ -21,6 +21,7 @@ public class LaunchBrowser {
 			System.setProperty("webdriver.chrome.driver", Utils.getValue("cpath"));
 			ChromeOptions ops = new ChromeOptions();
 			ops.addArguments("--disable-notifications");
+		//	ops.setHeadless(true);
 			ops.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(ops);
 			driver.manage().window().fullscreen();
@@ -43,7 +44,7 @@ public class LaunchBrowser {
 
 	@AfterClass
 	public void close() {
-		driver.close();
+		driver.quit();
 		System.err.println("close Browser");
 	}
 
