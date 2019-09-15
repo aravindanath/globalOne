@@ -25,12 +25,10 @@ public class CompleteApplication extends LaunchBrowser {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	}
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void LinkText() {
 		String expected = driver.findElement(By.xpath("//a[@title='Automation Practice Table']")).getText();
 		System.out.println("Expected :" + expected);
-		verifyText(expected, "Link Test");
-		driver.findElement(By.xpath("//a[@title='Automation Practice Table']")).click();
 
 		driver.navigate().to("https://www.toolsqa.com/automation-practice-table/");
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
@@ -48,9 +46,6 @@ public class CompleteApplication extends LaunchBrowser {
 		element.sendKeys("Vinod");
 		driver.findElement(By.name("firstname")).clear();
 		driver.findElement(By.name("firstname")).sendKeys("Sumanth");
-		driver.findElement(By.name("lastname")).sendKeys("Kumar");
-		driver.findElement(By.name("lastname")).clear();
-		driver.findElement(By.name("lastname")).sendKeys("Yadhav");
 
 	}
 

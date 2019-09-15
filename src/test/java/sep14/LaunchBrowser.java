@@ -1,6 +1,7 @@
 package sep14;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.omg.Messaging.SyncScopeHelper;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +26,7 @@ public class LaunchBrowser {
 			ChromeOptions ops =  new ChromeOptions();
 			ops.addArguments("--disable-notifications");
 			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver(ops);
 		} else if (Utils.getValue("env").equalsIgnoreCase("windows")
 				&& Utils.getValue("browser").equalsIgnoreCase("chrome")) {
@@ -37,8 +39,8 @@ public class LaunchBrowser {
 			driver = new FirefoxDriver();
 			 
 		}
-		
-
+		driver.manage().window().fullscreen();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@AfterClass

@@ -1,69 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18980" started-at="2019-09-07T04:06:38Z" finished-at="2019-09-07T04:06:57Z">
+  <suite name="Default suite" duration-ms="22317" started-at="2019-09-15T03:51:51Z" finished-at="2019-09-15T03:52:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18980" started-at="2019-09-07T04:06:38Z" finished-at="2019-09-07T04:06:57Z">
-      <class name="sep7.ExampleDaaprovider">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:sep7.ExampleDaaprovider@e25b2fe]" name="beforeSuite" is-config="true" duration-ms="3099" started-at="2019-09-07T04:06:38Z" finished-at="2019-09-07T04:06:41Z">
+    <test name="Default test" duration-ms="22317" started-at="2019-09-15T03:51:51Z" finished-at="2019-09-15T03:52:13Z">
+      <class name="SelAdv.Calender">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SelAdv.Calender@5f341870]" name="openBrowser" is-config="true" duration-ms="3657" started-at="2019-09-15T03:51:51Z" finished-at="2019-09-15T03:51:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:sep7.ExampleDaaprovider@e25b2fe]" name="login" duration-ms="7395" started-at="2019-09-07T04:06:42Z" data-provider="testdata" finished-at="2019-09-07T04:06:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nidhi@myntra.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[myntr234a#123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="calenderdemo()[pri:0, instance:SelAdv.Calender@5f341870]" name="calenderdemo" duration-ms="18136" started-at="2019-09-15T03:51:55Z" finished-at="2019-09-15T03:52:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:sep7.ExampleDaaprovider@e25b2fe]" name="login" duration-ms="4295" started-at="2019-09-07T04:06:49Z" data-provider="testdata" finished-at="2019-09-07T04:06:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bose@myntra.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[myntra#12323]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:sep7.ExampleDaaprovider@e25b2fe]" name="login" duration-ms="3848" started-at="2019-09-07T04:06:53Z" data-provider="testdata" finished-at="2019-09-07T04:06:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[smita@myntra.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sree#12323]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="close()[pri:0, instance:sep7.ExampleDaaprovider@e25b2fe]" name="close" is-config="true" duration-ms="271" started-at="2019-09-07T04:06:57Z" finished-at="2019-09-07T04:06:57Z">
+        </test-method> <!-- calenderdemo -->
+        <test-method status="PASS" signature="close()[pri:0, instance:SelAdv.Calender@5f341870]" name="close" is-config="true" duration-ms="338" started-at="2019-09-15T03:52:13Z" finished-at="2019-09-15T03:52:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- sep7.ExampleDaaprovider -->
+      </class> <!-- SelAdv.Calender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
