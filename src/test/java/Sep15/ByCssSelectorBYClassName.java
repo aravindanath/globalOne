@@ -11,13 +11,12 @@ public class ByCssSelectorBYClassName extends LaunchBrowser{
 	@Test
 	public void byName() throws InterruptedException {
 		
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.icicibank.com/#");
 		
-		driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Noika 800 tough",Keys.ENTER);
+		driver.findElement(By.cssSelector(".pl-login-ornage-box")).click();
 		
 		Thread.sleep(2000);
-		driver.navigate().back();
-		Thread.sleep(2000);
+	 
 	
 	}
 

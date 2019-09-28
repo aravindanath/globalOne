@@ -12,7 +12,9 @@ public class ByCssSelectorBYID extends LaunchBrowser{
 	public void byName() throws InterruptedException {
 		
 		driver.get("https://www.amazon.com/");
-		
+		/**
+		 * '#' is for ID in css
+		 */
 		driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Noika 800 tough",Keys.ENTER);
 
 	}

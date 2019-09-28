@@ -88,7 +88,7 @@ public class SelectDropDown extends LaunchBrowser {
 	public static void diSelectByVisibleText(WebElement element,String text) {
 		Select sel =  new Select(element);
 		sel.deselectByVisibleText(text);
-	
+	}
 	
 
-}}
+}
