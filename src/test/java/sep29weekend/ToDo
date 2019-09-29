@@ -1,0 +1,39 @@
+0. Builtins  (DONE)
+1. Alerts / popups   (done)    
+2. dropdowns / select /deselect    (done)    
+3. radio btn      
+4. checkbox       
+5. textbox       
+6. fileupload       
+7. file download need to discuss on particular path download       
+8. webtable / calender / autosuggtion       
+9. cloud execution (new grid)       
+10. frames       
+11. windows       
+12. scroll (in-complete)       
+13. js highlighting elements       
+14. disselect dropdown       
+15. getattributes       
+16. mouse actions       
+17. screenshots       
+18. cookies
+19. autosuggest       
+20. DB
+30. drag n drop       
+31. waits
+32. Assertion (pytest and unittest) also normal assertion
+32 PYTEST / UNIT Test / HTML Report (ALURE Report) / suite execution / parallel execution
+33.Framework development (ALURE Report)
+34.jenkin integration
+
+35. RESUME MAKING ( Interview Q&A)
+36. ASSIGNMENTS GOJEK
+
+
+Links:
+
+https://www.hackerearth.com/challenges/test/programming-practice-challenge/
+
+https://www.hackerrank.com/domains/tutorials
+
+https://www.geeksforgeeks.org/python-programming-examples/

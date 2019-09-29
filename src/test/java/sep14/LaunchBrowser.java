@@ -39,13 +39,13 @@ public class LaunchBrowser {
 			driver = new FirefoxDriver();
 			 
 		}
-		driver.manage().window().fullscreen();
+ 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@AfterClass
-	public void close() {
-
+	public void close() throws InterruptedException {
+		Thread.sleep(2000);
 		driver.quit();
 	}
 
