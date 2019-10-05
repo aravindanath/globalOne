@@ -1,12 +1,12 @@
 0. Builtins  (DONE)
 1. Alerts / popups   (done)    
 2. dropdowns / select /deselect    (done)    
-3. radio btn      
-4. checkbox       
-5. textbox       
-6. fileupload       
-7. file download need to discuss on particular path download       
-8. webtable / calender / autosuggtion       
+3. radio btn   (done)   
+4. checkbox  (done)     
+5. textbox   (done)     
+6. fileupload  (done)     
+7. file download on particular path download   (done)  
+8. webtable / calender / autosuggtion   (done)    
 9. cloud execution (new grid)       
 10. frames       
 11. windows       
@@ -19,11 +19,9 @@
 18. cookies
 19. autosuggest       
 20. DB
-30. drag n drop       
+30. drag n drop      (done) 
 31. waits
-32. Assertion (pytest and unittest) also normal assertion
-32 PYTEST / UNIT Test / HTML Report (ALURE Report) / suite execution / parallel execution
-33.Framework development (ALURE Report)
+33.Framework development  
 34.jenkin integration
 
 35. RESUME MAKING ( Interview Q&A)

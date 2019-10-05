@@ -12,7 +12,9 @@ public class ByCssSelectorBYEndswith extends LaunchBrowser{
 	public void byName() throws InterruptedException {
 		
 		driver.get("https://www.facebook.com");
-		
+		/**
+		 * '$' for ends with
+		 */
 		driver.findElement(By.cssSelector("input[type$='ail']")).sendKeys("Neeraj",Keys.ENTER);
 		
 
