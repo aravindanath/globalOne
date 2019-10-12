@@ -38,6 +38,8 @@ public class TakeScreenShots extends LaunchBrowser {
 		takeNormalScreenShot(driver);
 		
 		
+ 
+		
 	}
 
 	/**
@@ -50,8 +52,8 @@ public class TakeScreenShots extends LaunchBrowser {
 		Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
 				.takeScreenshot(driver);
 		Date d = new Date();
-		String trim = d.toString().replace(":", "_").replace(" ", "_") + ".png";
-		String filePath = "./test-output/demo" + trim;
+		String name = d.toString().replace(":", "_").replace(" ", "_") + ".png";
+		String filePath = "./test-output/demo" + name;
 		ImageIO.write(screenshot.getImage(), "png", new File(filePath));
 
 	}
@@ -61,8 +63,8 @@ public class TakeScreenShots extends LaunchBrowser {
 		TakesScreenshot screen = (TakesScreenshot) driver;
 		File src = screen.getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
-		String trim = d.toString().replace(":", "_").replace(" ", "_") + ".png";
-		String filePath = "./test-output/demo" + trim;
+		String name = d.toString().replace(":", "_").replace(" ", "_") + ".png";
+		String filePath = "./test-output/demo" + name;
 		
 		File target = new File(filePath);
 		FileUtils.copyFile(src, target);
